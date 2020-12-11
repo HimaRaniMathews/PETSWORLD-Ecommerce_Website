@@ -1,3 +1,38 @@
-.brand-header{
-    font-family: 'Dancing Script', cursive;
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+#content{
+    min-height: 600px;
+}
+
+#banner_image {
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+.mySlides {
+    display:none;
+}
+
+#item_list {
+    padding-top: 50px;
+}
+a{
+    text-decoration: none;
+}
+footer {
+  
+    padding: 5px 0;
+    background-color: #101010;
+    color:#9d9d9d;
+    bottom: 0;
+    width: 100%;
+}
+#login-panel .panel-footer{
+    font-weight:normal;
 }

@@ -1,0 +1,91 @@
+<!doctype HTML>
+<html>
+<head>
+<title>PetsWorld</title>
+    <link rel = "icon" href ="https://www.petsworld.in/pub/media/favicon/stores/1/pets.png" 
+        type = "image/x-icon"> 
+    <script src="https://kit.fontawesome.com/f4bbad3365.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link type="text/css" rel="stylesheet" href="style.css">
+   <style>
+    body { 
+ background-image: url(img/b1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+         
+    </style>  
+</head>
+<body style="padding-top: 50px;">
+<!---------------Nav----------------------------------------------------------------------------------->   
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">PETS <i class="fas fa-paw"></i> WORLD </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+            <li ><a href="index.html" ><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li class="active"><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li ><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+<!------------SignUP--------------------------------------------------------------------------------------->    
+<div class="container-fluid decor_bg" id="content" style="padding: 50px;margin: 0px;">
+   <div class="row">
+    <div class="container">
+     <div class="col-lg-4 col-lg-offset-2 col-md-6 col-md-offset-1">
+       <div class="panel panel-info" >
+        <div class="panel-heading">
+                        <h2>SIGN UP <span class="glyphicon glyphicon-user"></span></h2>
+           </div>
+           <div class="panel-body">
+                        <form  action="signup_script.html" method="POST">
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Name" name="name"  required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control"  placeholder="Email"  name="e-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" name="password" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control"  placeholder="Contact" maxlength="10" size="10" name="contact" required>
+                            </div>
+                            <div class="form-group">
+                                <input  type="text" class="form-control"  placeholder="City" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <input  type="text" class="form-control"  placeholder="Address" name="address" required>
+                            </div>
+                            <center><button type="submit" name="submit" class="btn btn-primary" style="width: 50%;">Submit</button></center>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div></div><br><br>
+<!-----------FOOTER------------------------------------------------------------------------------------------->    <footer style="position: fixed;">
+            <div class="container">
+                <center>
+                    <p>Copyright &copy; PETS <i class="fas fa-paw"></i> WORLD</p>
+                </center>
+            </div>
+</footer>
+</body>
+</html>
