@@ -1,7 +1,13 @@
+<?php
+require("includes/connection.php");
+if (isset($_SESSION['email'])) {
+    header('location: products.php');
+}
+?>
 <!doctype HTML>
 <html>
 <head>
-<title>PetsWorld</title>
+<title>Home | PetsWorld</title>
     <link rel = "icon" href ="https://www.petsworld.in/pub/media/favicon/stores/1/pets.png" 
         type = "image/x-icon"> 
     <script src="https://kit.fontawesome.com/f4bbad3365.js" crossorigin="anonymous"></script>
@@ -13,44 +19,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link type="text/css" rel="stylesheet" href="css/style.css">
-   <style>
-    body { 
- background-image: url(img/b3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-         
-    </style>  
 </head>
 <body style="padding-top: 50px;">
-<!---------------Nav----------------------------------------------------------------------------------->   
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="index.html" class="navbar-brand">PETS <i class="fas fa-paw"></i> WORLD </a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html" ><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-            </div>
-        </div>
-        </div>
+     <?php
+        include 'includes/header.php';
+        ?>
 <!--------Slide------------------------------------------------------------------------------------>
     <div id="c1">
         <div id="c2">
-             <a><img class="mySlides" src="img/1.jpg" style="width:100%"></a>
-             <a><img class="mySlides" src="img/2.jpg" style="width:100%"></a>
-             <a><img class="mySlides" src="img/3.png" style="width:100%"></a>
-             <a><img class="mySlides" src="img/4.jpg" style="width:100%"></a>
+             <a href=products.php><img class="mySlides" src="img/1.jpg" style="width:100%"></a>
+             <a href=products.php><img class="mySlides" src="img/2.jpg" style="width:100%"></a>
+             <a href=products.php><img class="mySlides" src="img/3.png" style="width:100%"></a>
+             <a href=products.php><img class="mySlides" src="img/4.jpg" style="width:100%"></a>
         </div>
     </div>
 <!-----------Category----------------------------------------------------------------------------------->   
@@ -81,7 +61,7 @@
                     <div class="col-sm-3">
                         <a href="product.html#bird" >
                             <div class="thumbnail">
-                                <img src="img/b.jfif" alt="" style="height: 200px;width: 100%">
+                                <img src="img/w.jpg" alt="" style="height: 200px;width: 100%">
                                 <div class="caption">
                                     <h3 id="cap">BIRDS</h3>
                                 </div>
@@ -103,13 +83,11 @@
                     
                 </div>
             </div>
-<!-----------FOOTER------------------------------------------------------------------------------------------->     <footer>
-            <div class="container">
-                <center>
-                    <p>Copyright &copy; PETS <i class="fas fa-paw"></i> WORLD</p>
-                </center>
-            </div>
-</footer>
+  <!--Footer---------------------------------------------------------------->
+        <?php
+        include 'includes/footer.php';
+        ?>
+
 <!-----------SCRIPT------------------------------------------------------------------------------------------->   
 <script>
 var slideIndex = 0;
