@@ -19,6 +19,15 @@ if (isset($_SESSION['email'])) {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link type="text/css" rel="stylesheet" href="css/style.css">
+    <style>
+    body { 
+    background-image: url(img/b3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+         
+    </style>  
 </head>
 <body style="padding-top: 50px;">
      <?php

@@ -8,7 +8,7 @@ if (!isset($_SESSION['email'])) {
 <!doctype HTML>
 <html>
 <head>
-<title>Home | PetsWorld</title>
+<title>My Cart | PetsWorld</title>
     <link rel = "icon" href ="https://www.petsworld.in/pub/media/favicon/stores/1/pets.png" 
         type = "image/x-icon"> 
     <script src="https://kit.fontawesome.com/f4bbad3365.js" crossorigin="anonymous"></script>
