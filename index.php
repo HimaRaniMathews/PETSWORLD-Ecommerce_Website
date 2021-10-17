@@ -46,7 +46,7 @@ if (isset($_SESSION['email'])) {
 <div class="container-fluid" style="padding-bottom: 30px;">
                 <div class="row text-center" id="item_list">
                     <div class="col-sm-3">
-                        <a href="product.html#cat" >
+                        <a href="products.php#cat" >
                             <div class="thumbnail">
                                 <img src="img/c.jfif" alt="" style="height: 200px;width: 100%">
                                 <div class="caption">
@@ -57,7 +57,7 @@ if (isset($_SESSION['email'])) {
                     </div>
 
                     <div class="col-sm-3">
-                        <a href="product.html#fish" >
+                        <a href="products.php#fish" >
                             <div class="thumbnail">
                                 <img src="img/f.jfif" alt="" style="height: 200px;width: 100%">
                                 <div class="caption">
@@ -68,7 +68,7 @@ if (isset($_SESSION['email'])) {
                     </div>
 
                     <div class="col-sm-3">
-                        <a href="product.html#bird" >
+                        <a href="products.php#bird" >
                             <div class="thumbnail">
                                 <img src="img/w.jpg" alt="" style="height: 200px;width: 100%">
                                 <div class="caption">
@@ -80,7 +80,7 @@ if (isset($_SESSION['email'])) {
                     
                     
                     <div class="col-sm-3">
-                        <a href="product.html#dog" >
+                        <a href="products.php#dog" >
                             <div class="thumbnail">
                                 <img src="img/d.jfif" alt="" style="height: 200px;width: 100%">
                                 <div class="caption">
